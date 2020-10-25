@@ -77,8 +77,6 @@ Mat BusNumber::beforProcess(Mat image) {
 
 	Canny(image, image, 100, 300, 3);  //  Getting edges by Canny algorithm.
 
-	bitwise_and(image, mask, image);
-
 	return image;
 }
 
@@ -388,7 +386,6 @@ int BusNumber::BusNumberRectList(int control) {
 			}
 		}
 	}
-	resultNumber = 0
 	return resultNumber;
 
 }
